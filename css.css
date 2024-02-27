@@ -26,6 +26,7 @@ h1 {
     -webkit-background-clip: text; /* Masquer le texte en dehors du dégradé */
     background-clip: text;
     -webkit-text-fill-color: transparent; /* Remplir le texte avec le dégradé */
+    text-align: center;
     
 }
 
@@ -38,6 +39,7 @@ h2 {
     -webkit-background-clip: text; /* Masquer le texte en dehors du dégradé */
     background-clip: text;
     -webkit-text-fill-color: transparent; /* Remplir le texte avec le dégradé */
+    text-align: center;
 }
 
 h3 {
@@ -49,6 +51,7 @@ h3 {
     -webkit-background-clip: text; /* Masquer le texte en dehors du dégradé */
     background-clip: text;
     -webkit-text-fill-color: transparent; /* Remplir le texte avec le dégradé */
+    text-align: center;
 }
 
 /* Mise en forme des formulaires */
