@@ -67,7 +67,7 @@ input[type='email'] {
     font-size: 17px;
     font-weight: 600;
     font-size: 17px;
-    color: var(--color-primary);
+    color: black;
 }
 
 input[type='text']::placeholder,
