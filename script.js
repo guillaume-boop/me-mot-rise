@@ -133,7 +133,8 @@ function verifierLettre() {
 
 function demarrerJeu() {
 
-   
+       const zoneSaisie = document.querySelector(".zoneSaisie");
+    zoneSaisie.style.display = "block";
     // Réinitialiser le score à zéro
     score = 0;
 
