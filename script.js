@@ -139,10 +139,4 @@
     const btnValiderMot = document.getElementById("btnValiderMot");
     btnValiderMot.addEventListener("click", verifierLettre);
 
-    // Ajouter un écouteur d'événements pour la touche "Entrée" dans le champ de saisie
-    const inputEcriture = document.getElementById("inputEcriture");
-    inputEcriture.addEventListener("keydown", function(event)) {
-            verifierLettre();
-        }
-    });
 }
