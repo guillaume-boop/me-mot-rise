@@ -142,9 +142,6 @@
     // Ajouter un écouteur d'événements pour la touche "Entrée" dans le champ de saisie
     const inputEcriture = document.getElementById("inputEcriture");
     inputEcriture.addEventListener("keydown", function(event) {
-        // Vérifier si la touche pressée est la touche "Entrée" (code 13)
-        if (event.keyCode === 13) {
-            // Appeler la fonction verifierLettre() lorsque la touche "Entrée" est pressée
             verifierLettre();
         }
     });
