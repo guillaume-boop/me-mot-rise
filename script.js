@@ -115,37 +115,37 @@
             }
         }
 
-        function demarrerJeu() {
-            // Réinitialiser le score à zéro
-            score = 0;
-        
-            // Mettre à jour le score affiché sur la page
-            const spanScore = document.querySelector(".zoneScore span");
-            spanScore.innerText = score;
-        
-            // Masquer la zone de saisie
-            const zoneSaisie = document.querySelector(".zoneSaisie");
-            zoneSaisie.style.display = "none";
-        
-            // Réinitialiser l'affichage de la zone de proposition
-            const zoneProposition = document.querySelector(".zoneProposition");
-            zoneProposition.style.display = "none";
-            zoneProposition.innerText = ""; // Effacer le contenu
-        
-            // Démarrer le jeu en affichant la première chaîne de caractères aléatoire
-            afficherNouvelleChaine();
-        
-            // Ajouter un écouteur d'événements pour le clic sur le bouton "Valider"
-            const btnValiderMot = document.getElementById("btnValiderMot");
-            btnValiderMot.addEventListener("click", verifierLettre);
-        
-            // Ajouter un écouteur d'événements pour la touche "Entrée" dans le champ de saisie
-            const inputEcriture = document.getElementById("inputEcriture");
-            inputEcriture.addEventListener("keydown", function(event) {
-                // Vérifier si la touche pressée est la touche "Entrée" (code 13)
-                if (event.keyCode === 13) {
-                    // Appeler la fonction verifierLettre() lorsque la touche "Entrée" est pressée
-                    verifierLettre();
-                }
-            });
+       function demarrerJeu() {
+    // Réinitialiser le score à zéro
+    score = 0;
+
+    // Mettre à jour le score affiché sur la page
+    const spanScore = document.querySelector(".zoneScore span");
+    spanScore.innerText = score;
+
+    // Masquer la zone de saisie
+    const zoneSaisie = document.querySelector(".zoneSaisie");
+    zoneSaisie.style.display = "none";  // Supprimez cette ligne pour éviter la répétition
+
+    // Réinitialiser l'affichage de la zone de proposition
+    const zoneProposition = document.querySelector(".zoneProposition");
+    zoneProposition.style.display = "none";
+    zoneProposition.innerText = ""; // Effacer le contenu
+
+    // Démarrer le jeu en affichant la première chaîne de caractères aléatoire
+    afficherNouvelleChaine();
+
+    // Ajouter un écouteur d'événements pour le clic sur le bouton "Valider"
+    const btnValiderMot = document.getElementById("btnValiderMot");
+    btnValiderMot.addEventListener("click", verifierLettre);
+
+    // Ajouter un écouteur d'événements pour la touche "Entrée" dans le champ de saisie
+    const inputEcriture = document.getElementById("inputEcriture");
+    inputEcriture.addEventListener("keydown", function(event) {
+        // Vérifier si la touche pressée est la touche "Entrée" (code 13)
+        if (event.keyCode === 13) {
+            // Appeler la fonction verifierLettre() lorsque la touche "Entrée" est pressée
+            verifierLettre();
         }
+    });
+}
