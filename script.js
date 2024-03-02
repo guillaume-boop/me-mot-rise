@@ -141,7 +141,7 @@
 
     // Ajouter un écouteur d'événements pour la touche "Entrée" dans le champ de saisie
     const inputEcriture = document.getElementById("inputEcriture");
-    inputEcriture.addEventListener("keydown", function(event) {
+    inputEcriture.addEventListener("keydown", function(event)) {
             verifierLettre();
         }
     });
